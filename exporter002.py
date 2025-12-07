@@ -5,9 +5,9 @@ from pathlib import Path
 from diffusers import StableDiffusionPipeline
 from optimum.exporters.onnx import main_export
 
-INPUT_MODEL_PATH = "./your_model.safetensors"  
+INPUT_MODEL_PATH = "./v1-5-pruned-emaonly-fp16.safetensors"  
 OUTPUT_ONNX_DIR = "./onnx_output"              
-TEMP_DIFFUSERS_DIR = "./_temp_diffusers_conversion" 
+TEMP_DIFFUSERS_DIR = "./intermediate_diffusers_model" 
 
 def convert_safetensors_to_onnx():
     print(f"--- Step 1: Loading '{INPUT_MODEL_PATH}' ---")
