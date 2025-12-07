@@ -1,0 +1,6 @@
+diffusers
+transformers
+optimum[onnxruntime]
+safetensors
+peft==0.10.0
+
